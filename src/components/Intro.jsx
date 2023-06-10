@@ -37,7 +37,7 @@ export const Intro = () => {
 
   return (
     <>
-      <Box m={"9rem auto"} w={"80%"} color={"white"}>
+      <Box position={'relative'} m={"25rem auto"} w={"80%"} color={"white"}>
         <Center flexDirection={"column"}>
           <Heading letterSpacing={2} as={"h1"} fontSize={"8rem"}>
             TRACK AND TRADE
@@ -62,7 +62,7 @@ export const Intro = () => {
             <Stack direction={"row"} spacing={"15rem"}>
               {topCoins?.map((coin) => (
                 <Link to={`/coin/${coin?.id}`} key={coin?.id}>
-                  <Flex justify={"center"} gap={'1rem'} flexDirection={"column"}>
+                  <Flex style={{ transition: "all 300ms ease " }} _hover={{transform: "scale(1.1)"}} justify={"center"} gap={'1rem'} flexDirection={"column"}>
                     <Center flexDirection={'column'}>
                     <SkeletonCircle size={"15rem"} isLoaded={!isHomeLoad}>
                       <Image width={"100%"} src={coin?.image} alt={coin?.name} />
