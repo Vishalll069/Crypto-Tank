@@ -37,7 +37,7 @@ export const Intro = () => {
 
   return (
     <>
-      <Box position={'relative'} m={"25rem auto"} w={"80%"} color={"white"}>
+      <Box id="home" position={'relative'} m={"25rem auto"} w={"80%"} color={"white"}>
         <Center flexDirection={"column"}>
           <Heading letterSpacing={2} as={"h1"} fontSize={"8rem"}>
             TRACK AND TRADE

@@ -35,8 +35,8 @@ export const Market = () => {
 
   return (
     <>
-      <Box m={"20rem auto"} w={"60%"} color={"white"} position={"relative"}>
-        <Box>
+      <Box id="market" m={"20rem auto"} w={"60%"} color={"white"} position={"relative"}>
+        <Box mb={'3rem'}>
           <Text as={"h1"} fontWeight={"500"} fontSize={"5rem"}>
             Market Values
           </Text>

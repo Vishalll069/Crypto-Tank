@@ -54,10 +54,10 @@ export const Navbar = () => {
             alignItems={"center"}
             _hover={{ ".nav_text": { opacity: 1 } }}
           >
-            <NavComp child={"Home"} />
-            <NavComp child={"Market"} />
-            <NavComp child={"About us"} />
-            <NavComp child={"Join Us"} />
+            <NavComp child={"Home"} to={'#'} />
+            <NavComp child={"Market"} to={'#market'} />
+            <NavComp child={"About us"} to={'#about'} />
+            <NavComp child={"Join Us"} to={'#contact'} />
           </Stack>
           <Stack direction={"row"} spacing="24px">
             <NavComp child={<BsTwitter />} />
