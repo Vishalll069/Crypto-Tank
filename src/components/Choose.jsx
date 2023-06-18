@@ -16,7 +16,7 @@ import {MdStackedBarChart} from 'react-icons/md'
 import { ChooseBox } from "../reusable/ChooseBox";
 
 export const Choose = () => {
-  const flexDirection = useBreakpointValue({ base: "column", md: "row" });
+  const flexDirection = useBreakpointValue({ base: "column", md: "row", sm:"column" });
 
   return (
     <Box
@@ -46,7 +46,8 @@ export const Choose = () => {
         gap={"1rem"}
         mt={"6rem"}
         justifyContent={"space-between"}
-        flexDirection={flexDirection}
+        direction={['column', 'column', 'column','row']}
+        // flexDirection={flexDirection}
       >
         <Box>
           <Stack spacing={'3rem'}>
@@ -73,9 +74,9 @@ export const Choose = () => {
             />
           </Stack>
         </Box>
-        <Box width={"50%"} >
+        <Flex justifyContent={'center'} width={"50%"} >
           <Image width={"100%"} src={manBit} />
-        </Box>
+        </Flex>
         <Box>
           <Stack spacing={'3rem'}>
            {/* <ChooseBox title={'RECEIVE YOUR OWN NFTS'} icon={<FaSatelliteDish/>}  desc={'Invest all your crypto at one place on one platform.'}  /> */}

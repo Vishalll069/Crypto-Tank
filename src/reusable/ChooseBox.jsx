@@ -3,7 +3,7 @@ import React from "react";
 
 export const ChooseBox = ({ title, icon, desc }) => {
   return (
-    <Box>
+    <Box cursor={'pointer'}>
       <Flex
         borderRadius={"2.4rem"}
         bgColor={"rgba(255, 255, 255, 0.05)"}
