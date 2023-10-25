@@ -5,6 +5,7 @@ import {Navbar} from './components/Navbar'
 import { Intro } from './components/Intro';
 import { Market } from './components/Market';
 import { Home } from './Pages/Home';
+import { Coin } from './Pages/Coin';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/coin/:coinId' element={<Coin/>}/>
       </Routes>
     </div>
   )

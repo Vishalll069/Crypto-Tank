@@ -1,8 +1,10 @@
 import { Text } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Heading = () => {
   return (
+    <Link to={'/'}>
     <Text
       cursor={"pointer"}
       color={"white"}
@@ -21,5 +23,7 @@ export const Heading = () => {
         CRYPTOTANK
       </span>
     </Text>
+    
+    </Link>
   );
 };

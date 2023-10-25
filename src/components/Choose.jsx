@@ -66,10 +66,10 @@ export const Choose = () => {
               }
             />
             <ChooseBox
-              title={"SELECT YOUR QUANTITY"}
+              title={"CONFIRM TRANSACTION"}
               icon={<FaBolt />}
               desc={
-                "Upload your crypto and set a title, description and price."
+                "Earn by selling your crypto on our marketplace."
               }
             />
           </Stack>
@@ -81,24 +81,24 @@ export const Choose = () => {
           <Stack spacing={'3rem'}>
            {/* <ChooseBox title={'RECEIVE YOUR OWN NFTS'} icon={<FaSatelliteDish/>}  desc={'Invest all your crypto at one place on one platform.'}  /> */}
            <ChooseBox
-              title={"CONNECT YOUR WALLET"}
+              title={"RECEIVE YOUR OWN NFTS"}
               icon={<FaSatelliteDish />}
               desc={
-                "Use Trust Wallet, Metamask or to connect to the app."
+                "Invest all your crypto at one place on one platform."
               }
             />
            <ChooseBox
-              title={"CONNECT YOUR WALLET"}
+              title={"TAKE A MARKET TO SELL"}
               icon={<FaChessKnight />}
               desc={
-                "Use Trust Wallet, Metamask or to connect to the app."
+                "Discover, collect the right crypto collections to buy or sell."
               }
             />
            <ChooseBox
-              title={"CONNECT YOUR WALLET"}
+              title={"DRIVE YOUR COLLECTION"}
               icon={<MdStackedBarChart />}
               desc={
-                "Use Trust Wallet, Metamask or to connect to the app."
+                "We make it easy to Discover, Invest and manage."
               }
             />
           </Stack>

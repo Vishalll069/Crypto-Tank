@@ -1,5 +1,6 @@
 import axios from "axios";
 import {
+  COIN_LOAD,
   GET_COIN,
   TOP_FOUR,
   TOP_FOUR_LOAD,
@@ -46,6 +47,7 @@ const getTopTen = (currPage) => {
 
 const getCoin = (coinId) => {
   return (dispatch) => {
+    dispatch({ type: COIN_LOAD, payload: true });
     try {
       axios
         .get(`https://api.coingecko.com/api/v3/coins/${coinId}`)
